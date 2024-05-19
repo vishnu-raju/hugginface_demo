@@ -45,10 +45,10 @@ jobs:
       - name: Add remote
         env:
           HF: ${{ secrets.HF }}
-        run: git remote add space https://huggingface.co/spaces/vishstud/demo-mlops
+        run: git remote add space https://vishstud:$HF@huggingface.co/spaces/vishstud/demo-mlops
 
       # Runs a set of commands using the runners shell
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
-        run: git push --force https://huggingface.co/spaces/vishstud/demo-mlops
+        run: git push --force https://vishstud:$HF@huggingface.co/spaces/vishstud/demo-mlops
