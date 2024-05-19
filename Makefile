@@ -6,9 +6,9 @@ run_tests:
 	python -m pytest -vv --cov=src tests/*.py
 
 format:
-	black src/*.py
+	black *.py
 
 lint:
-	pylint --disable=R,C src
+	pylint --disable=R,C app.py
 
 all: install lint run_tests format
