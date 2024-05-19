@@ -1,10 +1,11 @@
 ---
-title: {{title}}
-emoji: {{emoji}}
-colorFrom: {{colorFrom}}
-colorTo: {{colorTo}}
-sdk: {{sdk}}
-sdk_version: "{{sdkVersion}}"
+title: Vishnu Demo
+emoji: :)
+colorFrom: blue
+colorTo: red
+sdk: gradio
+sdk_version: 3.0.6
 app_file: app.py
 pinned: false
+license: cc
 ---
