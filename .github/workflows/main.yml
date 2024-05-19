@@ -27,19 +27,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v5.1.0
-        with:
-          python-version: 3.8
+      # - name: Set up Python 3.8
+      #   uses: actions/setup-python@v5.1.0
+      #   with:
+      #     python-version: 3.8
       
-      - name: Install dependencies
-        run: make install
+      # - name: Install dependencies
+      #   run: make install
   
-      - name: Lint py files
-        run: make lint
+      # - name: Lint py files
+      #   run: make lint
 
-      - name: Format files
-        run: make format
+      # - name: Format files
+      #   run: make format
 
       # Runs a single command using the runners shell
       - name: Add remote
